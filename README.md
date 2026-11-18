@@ -13,9 +13,13 @@ From the repository root, create the Joplin plugin archive:
 
 ```sh
 mkdir -p dist
-tar --format=ustar -cf dist/Read-Distraction-Free.jpl manifest.json index.js window-control.js
+tar --format=ustar -cf dist/Read-Distraction-Free.jpl manifest.json index.js window-control.js LICENSE
 ```
 
 In Joplin, open **Tools → Options → Plugins**, choose **Install from file** in the gear menu, select the archive, and restart Joplin.
 
 Use **Tools → Options → Read Distraction Free** to adjust the plugin settings and **Keyboard Shortcuts** to change its shortcut. The default shortcut is **Ctrl+Alt+Shift+R**.
+
+## License
+
+[MIT](LICENSE)
