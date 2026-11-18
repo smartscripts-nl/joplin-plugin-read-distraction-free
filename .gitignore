@@ -1,0 +1,8 @@
+/dist/
+/*.jpl
+/*.tgz
+/reader.css
+/vendor/
+/window-request.json
+/window-request.json.tmp
+/window-response.json
