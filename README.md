@@ -16,7 +16,9 @@ npm install
 npm run dist
 ```
 
-The installable archive is created in `publish/com.joplin.plugin.read-distraction-free.jpl`.
+This skeleton is intended for publication. The personal installation uses the archive maintained in the original ChatGPT project.
+
+The publication archive is created in `publish/com.joplin.plugin.read-distraction-free.jpl`.
 
 In Joplin, open **Tools → Options → Plugins**, choose **Install from file** in the gear menu, select the archive, and restart Joplin.
 

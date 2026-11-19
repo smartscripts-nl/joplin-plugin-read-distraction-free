@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 
 const autoTabsKey = Symbol.for('com.joplin.plugin.headings-to-tabs.enable-on-load');
-const legacyAutoTabsKey = Symbol.for('com.alexpot.headings-to-tabs.enable-on-load');
 
 function closeReaderAndFocusMain(reader) {
   let mainWindow;
@@ -86,7 +85,6 @@ exports.default = () => {
           reply(id, 'opened');
           if (message.autoTabs) {
             popup[autoTabsKey] = true;
-            popup[legacyAutoTabsKey] = true;
           }
         }
         return popup;
