@@ -9,12 +9,14 @@ A Joplin Desktop plugin that opens the selected note in a separate reading windo
 
 ## Build and install
 
-From the repository root, create the Joplin plugin archive:
+From the repository root:
 
 ```sh
-mkdir -p dist
-tar --format=ustar -cf dist/Read-Distraction-Free.jpl manifest.json index.js window-control.js LICENSE
+npm install
+npm run dist
 ```
+
+The installable archive is created in `publish/com.alexpot.read-distraction-free.jpl`.
 
 In Joplin, open **Tools → Options → Plugins**, choose **Install from file** in the gear menu, select the archive, and restart Joplin.
 

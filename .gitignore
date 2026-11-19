@@ -1,8 +1,7 @@
+/node_modules/
 /dist/
-/*.jpl
-/*.tgz
-/reader.css
-/vendor/
-/window-request.json
-/window-request.json.tmp
-/window-response.json
+/publish/
+/.idea/
+/.npmrc
+/src/window-request.json*
+/src/window-response.json
