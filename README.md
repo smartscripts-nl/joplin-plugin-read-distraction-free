@@ -16,7 +16,7 @@ npm install
 npm run dist
 ```
 
-The installable archive is created in `publish/com.alexpot.read-distraction-free.jpl`.
+The installable archive is created in `publish/com.joplin.plugin.read-distraction-free.jpl`.
 
 In Joplin, open **Tools → Options → Plugins**, choose **Install from file** in the gear menu, select the archive, and restart Joplin.
 

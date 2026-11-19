@@ -129,7 +129,7 @@
     const margin = Number.isFinite(value) ? Math.max(0, Math.min(1000, Math.round(value))) : 240;
     const directory = await joplin.plugins.dataDir();
     const destination = path.join(directory, 'reading-margins.css');
-    const settingsPanel = `[id="setting-section-plugin-com.alexpot.read-distraction-free.${section}"]`;
+    const settingsPanel = `[id="setting-section-plugin-com.joplin.plugin.read-distraction-free.${section}"]`;
     const settingsColumn = settingsPanel + ' .config-screen-settings-container > div';
     const shortcutInfo = messages.shortcutHelp + ': ' + (displayedShortcut || messages.unassigned);
     // Joplin loads the same chrome stylesheets into each native note window.

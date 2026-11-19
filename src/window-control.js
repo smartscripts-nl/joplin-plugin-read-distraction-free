@@ -3,7 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const autoTabsKey = Symbol.for('com.alexpot.headings-to-tabs.enable-on-load');
+const autoTabsKey = Symbol.for('com.joplin.plugin.headings-to-tabs.enable-on-load');
+const legacyAutoTabsKey = Symbol.for('com.alexpot.headings-to-tabs.enable-on-load');
 
 function closeReaderAndFocusMain(reader) {
   let mainWindow;
@@ -43,7 +44,7 @@ exports.default = () => {
   const directory = path.dirname(__filename);
   const request = path.join(directory, 'window-request.json');
   const response = path.join(directory, 'window-response.json');
-  const stateKey = Symbol.for('com.alexpot.read-distraction-free.window-control');
+  const stateKey = Symbol.for('com.joplin.plugin.read-distraction-free.window-control');
 
   if (!window[stateKey]) {
     let reader;
@@ -83,7 +84,10 @@ exports.default = () => {
           reader = popup;
           restore();
           reply(id, 'opened');
-          if (message.autoTabs) popup[autoTabsKey] = true;
+          if (message.autoTabs) {
+            popup[autoTabsKey] = true;
+            popup[legacyAutoTabsKey] = true;
+          }
         }
         return popup;
       }
