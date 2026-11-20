@@ -1,7 +1,0 @@
-/node_modules/
-/dist/
-/publish/
-/.idea/
-/.npmrc
-/src/window-request.json*
-/src/window-response.json

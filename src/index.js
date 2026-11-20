@@ -10,7 +10,7 @@
     article: ['articlePage', 'fa-file-alt'],
     focus: ['focusFrame', 'fa-expand'],
   };
-  const defaultShortcut = 'Ctrl+Alt+Shift+R';
+  const defaultShortcut = 'Ctrl+Shift+R';
   const translations = {
     "en": {
       "openBook": "Open book",
