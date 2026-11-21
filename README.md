@@ -29,7 +29,7 @@ The publication archive is created in `publish/com.joplin.plugin.read-distractio
 
 In Joplin, open **Tools → Options → Plugins**, choose **Install from file** in the gear menu, select the archive, and restart Joplin.
 
-Use **Tools → Options → Read Distraction Free** to adjust the plugin settings and **Keyboard Shortcuts** to change its shortcut. The default shortcut is **Ctrl+Shift+R**.
+Use **Tools → Options → Read Distraction Free** to adjust the plugin settings and **Keyboard Shortcuts** to change its shortcut. The default shortcut is **Ctrl+Shift+R**. If the RDF window has been opend, hitting the shortcut once again will close the window.
 
 ## Colofon
 
